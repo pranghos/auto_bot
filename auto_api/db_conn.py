@@ -2,7 +2,7 @@
 """
 Created on Fri Jul  3 14:11:13 2020
 
-@author: AnushaRamanujam
+@author: PranabGhosh
 """
 import ibm_db
 from ibm_db import connect
