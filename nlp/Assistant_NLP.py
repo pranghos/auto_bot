@@ -2,7 +2,7 @@
 """
 Created on Mon Jul 13 14:07:16 2020
 
-@author: JitendraGaur
+@author: PranabGhosh
 """
 # Required packages
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -22,15 +22,6 @@ from collections import Counter
 import en_core_web_sm
 from nltk.stem import PorterStemmer
 import requests
-
-# Create a main function to bring all functions together for the output.
-'''
-def main():
-    textfile = clustering(df1)
-    NLU_list = NLU(df1)
-    output_spacy = Spacy(df1)
-    Synonym_list = Synonym(df1)
-'''   
 
 def clustering(df1):
     print("entered clustering function")
@@ -280,28 +271,7 @@ def Synonym(df1):
 def set_value(row_number, assigned_value): 
     return assigned_value[row_number] 
 
-'''
-def nlp(args):  
-    # DB credentials
-    ibm_db_conn = ibm_db.connect("DATABASE="+"BLUDB"+";HOSTNAME="+"dashdb-txn-sbox-yp-dal09-11.services.dal.bluemix.net"+";PORT="+"50000"+";PROTOCOL=TCPIP;UID="+"uid"+";PWD="+"pwd"+";", "","")
-    conn = ibm_db_dbi.Connection(ibm_db_conn)
-    # Reading table from DB
-    df1=pd.read_sql("SELECT * FROM FAQ_DATAPREP",conn)
-    df1 = df1.fillna('')
-    data_dict = df1.to_dict()
-    #main()
-    textfile = clustering(df1)
-    #data_dict = textfile.to_dict()
-    NLU_list = NLU(textfile)
-    #data_dict = textfile.to_dict()
-    output_spacy = Spacy(NLU_list)
-    Synonym_list = Synonym(output_spacy)
-    conn.close() # closing database connection
-    return data_dict
-'''
 
-    
-#import pickle
 import flask
 from flask import Flask, request, jsonify, render_template
 import os
