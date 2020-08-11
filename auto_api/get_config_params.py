@@ -2,7 +2,7 @@
 """
 Created on Mon Jul 13 10:04:25 2020
 
-@author: AnushaRamanujam
+@author: PranabGhosh
 """
 
 import configparser
