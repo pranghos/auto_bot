@@ -2,11 +2,10 @@
 """
 Created on Wed Jul  1 18:54:33 2020
 
-@author: AnushaRamanujam
+@author: PranabGhosh
 """
 import random
 import get_config_params
-
 
 intent_col_name = get_config_params.get_param('DB','INTENTNAME')
 entity_col_name = get_config_params.get_param('DB','ENTITYNAME')
