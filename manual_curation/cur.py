@@ -2,7 +2,7 @@
 """
 Created on Fri Jul 17 09:31:18 2020
 
-@author: ManasiDhekane
+@author: PranabGhosh
 """
 
 import ibm_db
