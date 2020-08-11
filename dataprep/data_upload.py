@@ -1,4 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jul 15 09:36:03 2020
 
+@author: PranabGhosh
+"""
 import os
 import validators
 import ibm_db
