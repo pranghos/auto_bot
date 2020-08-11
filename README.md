@@ -3,7 +3,7 @@ automatic chatbot
 
 Running the app:
 
-Step 1: Run the data preparation module to ingest data by running the url  in web browser: http://localhost:5000/upload
+Step 1: Run the data preparation module to ingest data by hitting the url with input data (file: csv, pdf or data: url) as form-data in postman:: http://localhost:5000/upload
 
 Step2:  Run the nlp module by running the command in Windows powershell: Invoke-RestMethod -Method POST -Uri http://localhost:9099/nlp
 
